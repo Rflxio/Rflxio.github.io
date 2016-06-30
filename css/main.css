@@ -295,3 +295,43 @@ body {
     background-repeat: no-repeat;
     background-size: 30%;
 }
+
+.container {
+    display: table;
+    table-layout: fixed;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.container > div {
+    display: table-cell;
+    border: none;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Fugue Mono';
+    src: url('/fonts/fugue_mono.otf');
+}
+
+.container a {
+    font-family: 'Fugue Mono', Helvetica, Arial, sans-serif;
+    color: #e6e6e6;
+    text-decoration: none;
+    -webkit-transition: color 200ms ease-out 1s;
+    -moz-transition: color 200ms ease-out 1s;
+    -o-transition: color 200ms ease-out 1s;
+    transition: color 0.2s ease;
+}
+
+.container a:hover {
+    color: #ff008f;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .container > div {
+        display: block;
+    }
+}
