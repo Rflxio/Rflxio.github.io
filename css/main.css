@@ -314,26 +314,19 @@ body {
 /* --------------------- Footer --------------------- */
 
 .social {
-    display: table;
-    table-layout: fixed;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.social > div {
-    display: table-cell;
-    border: none;
-    text-align: center;
+    position: absolute;
+    bottom: 1.6em;
+    width: 100%;
 }
 
 @font-face {
     font-family: 'Fugue Mono';
-    src: url('/fonts/fugue_mono.otf');
+    src: url('../fonts/fugue_mono.otf');
 }
 
 .social a {
     font-family: 'Fugue Mono', Helvetica, Arial, sans-serif;
+    letter-spacing: 0em;
     color: #e6e6e6;
     text-decoration: none;
     -webkit-transition: color 200ms ease-out 1s;
@@ -345,10 +338,4 @@ body {
 .social a:hover {
     color: #ff008f;
     cursor: pointer;
-}
-
-@media (max-width: 480px) {
-    .social > div {
-        display: block;
-    }
 }
