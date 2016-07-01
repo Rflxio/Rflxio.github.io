@@ -286,13 +286,7 @@ html {
 }
 
 body {
-    background: black url('../img/logo.svg');
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: black url('../img/logo.svg') no-repeat center;
     background-size: 30%;
 }
 
