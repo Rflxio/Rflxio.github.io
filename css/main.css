@@ -49,7 +49,7 @@ hr {
 
 /*
  * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
+ * images, videos and the bottom of their socials:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
@@ -296,7 +296,30 @@ body {
     background-size: 30%;
 }
 
-.container {
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+}
+
+/* --------------------- Footer --------------------- */
+
+.social {
     display: table;
     table-layout: fixed;
     width: 50%;
@@ -304,7 +327,7 @@ body {
     margin-right: 25%;
 }
 
-.container > div {
+.social > div {
     display: table-cell;
     border: none;
     text-align: center;
@@ -315,7 +338,7 @@ body {
     src: url('/fonts/fugue_mono.otf');
 }
 
-.container a {
+.social a {
     font-family: 'Fugue Mono', Helvetica, Arial, sans-serif;
     color: #e6e6e6;
     text-decoration: none;
@@ -325,13 +348,13 @@ body {
     transition: color 0.2s ease;
 }
 
-.container a:hover {
+.social a:hover {
     color: #ff008f;
     cursor: pointer;
 }
 
 @media (max-width: 480px) {
-    .container > div {
+    .social > div {
         display: block;
     }
 }
