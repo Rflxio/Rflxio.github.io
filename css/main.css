@@ -287,7 +287,7 @@ html {
 
 body {
     background: black url('../img/logo.svg') no-repeat center;
-    background-size: 30%;
+    background-size: 50%;
 }
 
 
@@ -315,7 +315,7 @@ body {
 
 .social {
     position: absolute;
-    bottom: 1.6em;
+    bottom: 4.6em;
     width: 100%;
 }
 
@@ -326,7 +326,7 @@ body {
 
 .social a {
     font-family: 'Fugue Mono', Helvetica, Arial, sans-serif;
-    letter-spacing: 0em;
+    letter-spacing: 0.05em;
     color: #e6e6e6;
     text-decoration: none;
     -webkit-transition: color 200ms ease-out 1s;
