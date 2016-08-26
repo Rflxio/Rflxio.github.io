@@ -315,6 +315,7 @@ body {
     width: 90%;
     max-width: 960px;
     margin: 5% auto;
+    padding: 60px;
 }
 
 /* Sticky footer styles
@@ -325,11 +326,11 @@ html {
 }
 
 .footer {
-    position: relative;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
+    position: absolute;
 }
 
 /* --------------------- Footer --------------------- */
