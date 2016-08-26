@@ -286,10 +286,36 @@ html {
 }
 
 body {
-    background: black url('../img/logo.svg') no-repeat center;
+    background: black;
+    /*background: black url('../img/logo.svg') no-repeat center;*/
     background-size: 50%;
 }
 
+/* Navbar styles
+-------------------------------------------------- */
+.navbar-brand {
+    height: 60px;
+}
+
+.navbar-brand img {
+    height: 100%;
+}
+
+.navbar {
+    background: transparent;
+    border: none;
+    height: 60px;
+    padding: 15px 15px;
+}
+
+/* Main video styles
+-------------------------------------------------- */
+.main-video {
+    position: relative;
+    width: 90%;
+    max-width: 960px;
+    margin: 5% auto;
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -304,7 +330,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -314,8 +340,7 @@ body {
 /* --------------------- Footer --------------------- */
 
 .social {
-    position: absolute;
-    bottom: 4.6em;
+    position: relative;
     width: 100%;
 }
 
