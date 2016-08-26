@@ -295,17 +295,19 @@ body {
 -------------------------------------------------- */
 .navbar-brand {
     height: 60px;
+    padding: 0;
 }
 
-.navbar-brand img {
-    height: 100%;
+.reflex-logo svg {
+    fill: #FFF;
 }
 
 .navbar {
     background: transparent;
     border: none;
     height: 60px;
-    padding: 15px 15px;
+    padding: 30px 30px;
+    margin-bottom: 0;
 }
 
 /* Main video styles
@@ -314,8 +316,21 @@ body {
     position: relative;
     width: 90%;
     max-width: 960px;
-    margin: 0 auto;
-    padding-top: 15px;
+    margin: 5% auto;
+}
+
+.main-video .caption {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main-video p {
+    font-family: 'Fugue Mono', Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+    color: #444444;
+    text-decoration: none;
 }
 
 /* Sticky footer styles
@@ -325,18 +340,22 @@ html {
     min-height: 100%;
 }
 
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
 .footer {
+    position: relative;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    position: absolute;
 }
 
 /* --------------------- Footer --------------------- */
 
 .social {
-    position: relative;
     width: 100%;
 }
 
@@ -359,4 +378,20 @@ html {
 .social a:hover {
     color: #ff008f;
     cursor: pointer;
+}
+
+/* --------------------- Media Query Fix --------------------- */
+/* Portrait and Landscape */
+
+@media only screen and (max-width: 768px) {
+    .main-video {
+        position: relative;
+        width: 90%;
+        max-width: 960px;
+        margin: 40% auto;
+    } 
+
+    .footer {
+        position: absolute;
+    }
 }
