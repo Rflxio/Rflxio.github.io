@@ -314,8 +314,7 @@ body {
     position: relative;
     width: 90%;
     max-width: 960px;
-    margin: 5% auto;
-    padding: 60px;
+    margin: 0 auto;
 }
 
 /* Sticky footer styles
